@@ -9,6 +9,8 @@ public class HelpCommand : CommandBase
     {
         await ReplyAsync($"**The following commands can be used:**{Environment.NewLine}" +
                          $"  • **ping** - Pings the Discord channel{Environment.NewLine}" +
-                         $"  • **addrole \"name of role\" \"name of user\" (repeat for multiple users)** - Adds new role with option to add users immediately");
+                         $"  • **addrole \"name of role\"** - Adds user to role, and creates role if it doesn't exist{Environment.NewLine}" +
+                         $"  • **removedrole \"name of role\"** - Removes the user from the role, if it exists{Environment.NewLine}" +
+                         "  • **deleterole \"name of role\"** - Deletes the role from the server, if it exists (admin only)");
     }
 }
