@@ -15,6 +15,10 @@ public class AddRoleCommand : CommandBase
             await GuildUser.AddRoleAsync(newRole);
             await ReplyAsync($"{Mention} The {roleName} role has been added!");
         }
+        else if (role.Permissions.Administrator || role.Permissions.ModerateMembers)
+        {
+            await ReplyAsync($"{Mention} The {roleName} role is for a privileged few.");
+        }
         else
         {
             if (role.Members.Select(m => m.Id).Contains(Context.Message.Author.Id))
@@ -23,6 +27,7 @@ public class AddRoleCommand : CommandBase
                 return;
             }
             await GuildUser.AddRoleAsync(role);
+            await ReplyAsync($"{Mention} The {roleName} role has been added!");
         }
     }
 }
