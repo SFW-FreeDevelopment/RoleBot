@@ -4,7 +4,7 @@ using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace RoleBot;
+namespace RoleBot.App;
 
 public static class Bot
 {

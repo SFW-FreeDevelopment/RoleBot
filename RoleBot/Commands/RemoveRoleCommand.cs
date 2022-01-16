@@ -1,7 +1,6 @@
-﻿using Discord;
-using Discord.Commands;
+﻿using Discord.Commands;
 
-namespace RoleBot.Commands;
+namespace RoleBot.App.Commands;
 
 public class RemoveRoleCommand : CommandBase
 {

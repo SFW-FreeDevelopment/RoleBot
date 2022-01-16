@@ -2,7 +2,7 @@
 using Discord.Commands;
 using Discord.WebSocket;
 
-namespace RoleBot.Commands;
+namespace RoleBot.App.Commands;
 
 public class CommandBase : ModuleBase<SocketCommandContext>
 {

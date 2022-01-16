@@ -1,6 +1,6 @@
 ﻿using Discord.Commands;
 
-namespace RoleBot.Commands;
+namespace RoleBot.App.Commands;
 
 public class DeleteRoleCommand : CommandBase
 {
