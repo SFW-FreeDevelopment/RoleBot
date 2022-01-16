@@ -15,15 +15,17 @@ public class RemoveRoleCommand : CommandBase
         }
         else
         {
-            var hasRole = role.Members.Select(m => m.Id).FirstOrDefault() == GuildUser.Id;
+            var hasRole = role.Members.FirstOrDefault(m => m.Id == GuildUser.Id) is not null;
             Console.WriteLine(hasRole);
             if (!hasRole)
             {
                 await ReplyAsync($"{Mention} You do not have the role {roleName}.");
-                return;
             }
-            await GuildUser.RemoveRoleAsync(role);
-            await ReplyAsync($"{Mention} The {roleName} role has been removed!");
+            else
+            {
+                await GuildUser.RemoveRoleAsync(role);
+                await ReplyAsync($"{Mention} The {roleName} role has been removed!");
+            }
         }
     }
 }
