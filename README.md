@@ -34,4 +34,4 @@ Want to pull the latest Docker image to host your own instance of ColorBot?
 
 ![image](/Documentation/Images/removerole.png)
 
-![image](/Documentation/Images/delete.png)
+![image](/Documentation/Images/deleterole.png)
