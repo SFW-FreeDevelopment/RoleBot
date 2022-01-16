@@ -1,17 +1,17 @@
-# ColorBot
-A Discord bot to update user colors using dynamically created roles.
+# RoleBot
+A Discord bot to manage server roles.
 
-Built with .NET Core 3.1 and Docker.
+Built with .NET 6.0 and Docker.
 
 ---
 
-Want to invite ColorBot to your own Discord?
+Want to invite RoleBot to your own Discord?
 
 [https://discord.com/api/oauth2/authorize?client_id=932322983916224534&permissions=268437504&scope=bot](https://discord.com/api/oauth2/authorize?client_id=932322983916224534&permissions=268437504&scope=bot)
 
 ---
 
-Want to pull the latest Docker image to host your own instance of ColorBot?
+Want to pull the latest Docker image to host your own instance of RoleBot?
 
 [https://hub.docker.com/repository/docker/chrisplummer/rolebot](https://hub.docker.com/repository/docker/chrisplummer/rolebot)
 
