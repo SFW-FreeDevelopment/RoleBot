@@ -21,7 +21,7 @@ public static class Bot
             .AddSingleton(_commands)
             .BuildServiceProvider();
 
-        const string token = "REPLACE_ME";
+        const string token = "OTMyMzIyOTgzOTE2MjI0NTM0.YeRTcQ.IgnR6qmUacGLLJ_uxrtwoW3b48E";
 
         _client.Log += Log;
 

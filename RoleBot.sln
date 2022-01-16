@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoleBot", "RoleBot\RoleBot.csproj", "{A1EC8F75-6D24-4E5A-93DF-2F8BC87C89EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoleBot.App", "RoleBot.App\RoleBot.App.csproj", "{A1EC8F75-6D24-4E5A-93DF-2F8BC87C89EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
