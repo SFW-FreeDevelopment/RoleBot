@@ -5,7 +5,7 @@ namespace RoleBot.App.Commands;
 
 public class AddRoleCommand : CommandBase
 {
-    [Command("addrole")]
+    [Command("add")]
     public async Task HandleCommandAsync([Remainder] string roleName)
     {
         var role = Context.Guild.Roles.FirstOrDefault(r => r.Name == roleName);

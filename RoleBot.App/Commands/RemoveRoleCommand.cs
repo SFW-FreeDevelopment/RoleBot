@@ -4,7 +4,7 @@ namespace RoleBot.App.Commands;
 
 public class RemoveRoleCommand : CommandBase
 {
-    [Command("removerole")]
+    [Command("remove")]
     public async Task HandleCommandAsync([Remainder] string roleName)
     {
         var role = Context.Guild.Roles.FirstOrDefault(r => r.Name == roleName);
