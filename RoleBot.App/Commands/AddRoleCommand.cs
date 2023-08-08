@@ -8,7 +8,7 @@ public class AddRoleCommand : CommandBase
     [Command("add")]
     public async Task HandleCommandAsync([Remainder] string roleName)
     {
-        var role = Context.Guild.Roles.FirstOrDefault(r => r.Name == roleName);
+        var role = Context.Guild.Roles.FirstOrDefault(r => string.Equals(r.Name, roleName, StringComparison.OrdinalIgnoreCase));
         if (role is null)
         {
             var newRole = await Context.Guild.CreateRoleAsync(roleName, GuildPermissions.None, null, false, true);
